@@ -22,7 +22,7 @@ const App = () => {
         <C.HeaderText>Sistema Financeiro</C.HeaderText>
       </C.Header>
       <C.Body>
-        <TableArea />
+        <TableArea list={filteredList}/>
       </C.Body>
     </C.Container>
   )
