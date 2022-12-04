@@ -23,7 +23,7 @@ const App = () => {
         <C.HeaderText>Sistema Financeiro</C.HeaderText>
       </C.Header>
       <C.Body>
-        <InfoArea />
+        <InfoArea currentMonth={currentMonth} />
 
         <TableArea list={filteredList}/>
       </C.Body>
