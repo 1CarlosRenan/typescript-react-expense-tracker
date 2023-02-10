@@ -1,11 +1,11 @@
-import * as C from './styles';
-import { Item } from '../../types/Item';
-import { formatDate } from '../../helpers/dateFilter';
-import { categories } from '../../data/categories';
+import * as C from "./styles";
+import { Item } from "../../types/Item";
+import { formatDate } from "../../helpers/dateFilter";
+import { categories } from "../../data/categories";
 
 type Props = {
-  item: Item
-}
+  item: Item;
+};
 
 export const TableItem = ({ item }: Props) => {
   return (
@@ -18,10 +18,10 @@ export const TableItem = ({ item }: Props) => {
       </C.TableColumn>
       <C.TableColumn>{item.title}</C.TableColumn>
       <C.TableColumn>
-        <C.Value color={categories[item.category].expense? 'red' : 'green'}>
+        <C.Value color={categories[item.category].expense ? "red" : "green"}>
           R$ {item.value}
         </C.Value>
       </C.TableColumn>
     </C.TableLine>
-  )
-}
+  );
+};
